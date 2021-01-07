@@ -5,7 +5,7 @@ import com.stepanov.sampleapp.mvp.entities.UserPost;
 
 import java.util.List;
 
-import rx.Single;
+import io.reactivex.Single;
 
 public interface PostRepository {
 

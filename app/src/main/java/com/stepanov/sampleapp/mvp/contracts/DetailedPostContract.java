@@ -10,6 +10,7 @@ public interface DetailedPostContract extends BaseContract {
     interface View extends BaseContract.View {
 
         void showPostInfo(UserPost post);
+
         void showCommentsList(List<Comment> comments);
     }
 
