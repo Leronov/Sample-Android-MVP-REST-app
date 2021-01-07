@@ -5,9 +5,11 @@ import com.stepanov.sampleapp.mvp.entities.UserPost;
 
 import java.util.List;
 
+import rx.Single;
+
 public interface PostRepository {
 
-    List<UserPost> getPostsList();
+    Single<List<UserPost>> getPostsList();
 
-    List<Comment> getPostComments(int postId);
+    Single<List<Comment>> getPostComments(int postId);
 }
