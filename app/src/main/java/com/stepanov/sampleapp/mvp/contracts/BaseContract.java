@@ -12,7 +12,9 @@ public interface BaseContract {
     interface Presenter<V extends View> {
 
         void onAttachView(V view);
+
         void onDetachView();
+
         void onFirstTimeViewCreated();
     }
 }

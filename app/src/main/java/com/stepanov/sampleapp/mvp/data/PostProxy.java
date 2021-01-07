@@ -2,17 +2,18 @@ package com.stepanov.sampleapp.mvp.data;
 
 import com.stepanov.sampleapp.mvp.entities.Comment;
 import com.stepanov.sampleapp.mvp.entities.UserPost;
+
 import java.util.List;
-import rx.Single;
 
+import io.reactivex.Single;
 
-class PostProxy implements PostRepository {
+public class PostProxy implements PostRepository {
 
     private final LocalPostRepository localRepository;
 
     private final PostRepository netRepository;
 
-    PostProxy() {
+    public PostProxy() {
         this.localRepository = new LocalPostRepository();
         this.netRepository = new NetPostRepository();
     }
